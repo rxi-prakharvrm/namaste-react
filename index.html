@@ -6,6 +6,12 @@
     <title>React Project</title>
 </head>
 <body>
-    <h1>Heading in HTML</h1>
+    <div id="root"></div>
+    <script>
+        const root = document.getElementById("root");
+        const child = document.createElement("h1");
+        child.innerHTML = "Heading in JavaScript";
+        root.appendChild(child);
+    </script>
 </body>
 </html>
